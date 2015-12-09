@@ -2,8 +2,8 @@
 
 var TpApiBuilder = (function() {
 
-	function TpApiBuilder() {
-		this.host = 'https://yoox.tpondemand.com/api/v2/{entity}';
+	function TpApiBuilder(domain) {
+		this.host = 'https://{domain}.tpondemand.com/api/v2/{entity}'.replace(/{domain}/, domain || 'www');
 		this.model = {
 			entity: '',
 			select: null,
