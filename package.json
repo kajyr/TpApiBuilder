@@ -8,12 +8,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://kajyr@github.com/kajyr/TpApiBuilder.git"
+    "url": "git://github.com/kajyr/TpApiBuilder.git"
   },
-  "author": "",
+  "author": {
+    "name": "Carlo 'kj'",
+    "email": "carlo.panzi@gmail.com",
+    "url": "http://kajyr.github.io"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kajyr/TpApiBuilder/issues"
   },
-  "homepage": "https://github.com/kajyr/TpApiBuilder#readme"
+  "homepage": "https://github.com/kajyr/TpApiBuilder#readme",
+  "keywords": [
+    "targetprocess",
+    "api",
+    "v2",
+    "query-builder"
+  ]
 }
