@@ -36,6 +36,11 @@ var TpApiBuilder = (function() {
 		return this;
 	};
 
+	TpApiBuilder.prototype.orderBy = function(assertion) {
+		this.model.order = assertion;
+		return this;
+	};
+
 	TpApiBuilder.prototype.render = function() {
 		var url, params;
 		url = this.host.replace(/{entity}/, this.model.entity);
@@ -51,6 +56,10 @@ var TpApiBuilder = (function() {
 
 		if (this.model.take) {
 			params.push('take='+this.model.take);
+		}
+
+		if (this.model.order) {
+			params.push('orderBy='+this.model.order);
 		}
 
 		return url + '?' + params.join('&');
