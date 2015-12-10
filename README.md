@@ -15,3 +15,28 @@ var bugApiUrl = new TPApiBuilder
 				.render();
 				
 ```
+## Methods
+
+**constructor**
+
+For privates instances you might pass the domain as parameter
+
+```javascript
+var bugApiModel = new TPApiBuilder(domain);
+```
+
+**render**
+
+Renders the api to string
+
+```javascript
+var apiUrl = new TPApiBuilder(domain).render();
+```
+
+**where**
+**andWhere**
+
+**select**
+
+**take**
+**orderby**
