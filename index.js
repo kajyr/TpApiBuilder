@@ -16,6 +16,11 @@ var TpApiBuilder = (function() {
 		return this;
 	};
 
+	TpApiBuilder.prototype.userStory = function() {
+		this.model.entity = 'UserStories';
+		return this;
+	};
+
 	TpApiBuilder.prototype.where = function(assertion) {
 		this.model.where = [assertion];
 		return this;
